@@ -14,7 +14,7 @@ $this->year = $year;
 
 }
 
-public function getCar() : string {
+public function getCar() : string  {
     return "Make : {$this->make}  | Model: {$this->model} | Year : {$this->year}";
 
 

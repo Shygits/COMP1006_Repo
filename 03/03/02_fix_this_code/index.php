@@ -4,21 +4,22 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 
-$host = "localhost"
+$host = "localhost";
 
-$dbname = "week_two";
+$dbn = "week_two";
 $username = "root";
 $password = "";
 
-$dsn = "mysql:host=$hostdbname=$dbname";
+$dsn = "mysql:host=$hostdbname = $dbname";
 
 try {
     
-    $pdo = new PDO($dsn $username,);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE PDO::ERRMODE_SILENT);
+    $pdo = new PDO($dsn, $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT);
 
     echo "Connected to database!";
+}
 
-catch (PDOException $e {
-    echo "Database error: " . $e
+catch (PDOException $e) {
+    echo ("Database error: " . $e->getMessage()); 
 }
