@@ -8,8 +8,9 @@
 */
 
 $items = ["Home", "About", "Contact"];
-
 ?>
+<?php include 'header.php'; ?>
+
 
 <!DOCTYPE html>
 <html>
