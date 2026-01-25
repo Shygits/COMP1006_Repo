@@ -18,4 +18,4 @@ $items = ["Home", "About", "Contact"];
 <?php require "nav.php";?>
 
 
-<?require "footer.php"; ?>
+<?php require "footer.php"; ?>
