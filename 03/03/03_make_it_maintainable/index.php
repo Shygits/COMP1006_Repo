@@ -9,15 +9,18 @@
 
 $items = ["Home", "About", "Contact"];
 ?>
-<?php include 'header.php'; ?>
+<?php require "header.php"; ?>
+<?php require "nav.php";?>
 
-
+// TO BE REMOVED
+/*
 <!DOCTYPE html>
 <html>
 <head>
     <title>My PHP Page</title>
 </head>
-<body>
+<body> */
+//
 
 <h1>Welcome</h1>
 
@@ -27,9 +30,15 @@ $items = ["Home", "About", "Contact"];
 <?php endforeach; ?>
 </ul>
 
-<footer>
+
+
+<?require "footer.php"; ?>
+
+//TO BE REMOVED
+/* <--  <footer>
     <p>&copy; 2026</p>
 </footer>
 
 </body>
-</html>
+</html> ---*/
+//

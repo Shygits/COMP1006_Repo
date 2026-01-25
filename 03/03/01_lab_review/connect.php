@@ -1,20 +1,20 @@
 <?php
-//STORE DB CONNECTION INFO IN VARIABLE
-
-$host = "localhost";
+//store db connection info in a variable 
+$host = "localhost"; //hostname
 $db = "lab_one";
-$user = "root";
-$pword = " ";
+$user = "root"; 
+$pword = ""; 
+//data source name - type of db, location and db name 
+$dsn = "mysql:host=$host;dbname=$db";
 
-$dsn ="mysql:host=$host;dbname=$db";
-
-//WHAT WE WANT TO HAPPEN
-try{
-    $pdo = new PDO($dsn, $user, $user, $password);
+//what we want to happen 
+try {
+    $pdo = new PDO($dsn, $user, $pword);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "<p> YAY! CONNECTED! </p>";
+    echo "<p> YAY Connected! </p>";
 }
-
-catch(PDOException $e) {
-die("Database connection failed: " .$e->getMessage());
+//this is what happens when things go wrong 
+catch (PDOException $e) {
+    //stop the script and display a helpful error message
+    die ("Database connection failed: " .$e->getMessage()); 
 }
