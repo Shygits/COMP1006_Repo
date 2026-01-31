@@ -15,8 +15,7 @@
         <h1 class="site-title">
             <img
                src="assets/bitumi.png" alt="Bake It Til You Make It Bakery" 
-                width="300"
-                position= "center"
+                width="400"
                 class="logo">
         </h1>
         
