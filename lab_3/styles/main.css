@@ -7,7 +7,7 @@ body{
     /*Border/Sprinkles?*/
     border: 15px dotted;
     border-image:repeating-linear-gradient(
-        90deg,
+        45deg,
         #ff69b4 0,
         #bce663 10px,
         #7f50ab 10px,
@@ -16,9 +16,22 @@ body{
 }
 
 /*Header*/
-main,
-header, 
+header {
+    max-width: 80%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+main {
+    max-width: 80%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+}
+
 footer {
+    background-color:#bb1166;
     max-width: 80%;
     margin: 2rem auto;
     padding: 1.5rem;
