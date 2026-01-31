@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bake It Til You Make It Bakery</title>
     <link href="styles/main.css" rel="stylesheet">
@@ -12,8 +14,8 @@
     <header>
         <h1 class="site-title">
             <img
-                src="assets/bitumi.png"
-                alt="Bake It Til You Make It Bakery"
+               src="assets/bitumi.png" alt="Bake It Til You Make It Bakery" 
+                width="300"
                 class="logo">
         </h1>
         
