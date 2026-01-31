@@ -19,7 +19,7 @@
         <label for="Message">Send Us Your Message</label>
         <input type="text" id= "message" name="message" required>
 
-        <button type="submit">Submited</button>
+        <button type="submit">Submit</button>
 
     </form>
 
