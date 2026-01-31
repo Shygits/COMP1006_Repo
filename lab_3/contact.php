@@ -2,7 +2,7 @@
 
 <main>
 
-    <img src="bakery.png" alt="Bakery Image">
+<img src="assets/bitumi.png" alt="Bitumi" width="300">
 
     <h2>Contact Us</h2>
     
