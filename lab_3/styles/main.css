@@ -1,12 +1,14 @@
 .logo {
-    max-width: 300px;
-    height: 300px;
-    position: center;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#e6dcdc;
+    background-color:#ffc0de;
     margin: 10px;
     padding: 10px;
 
@@ -34,11 +36,6 @@ main {
     margin: 2rem auto;
     padding: 1.5rem;
     text-align: center;
-}
-
-.site-title {
-    max-width: 300px;
-    height: auto;
 }
 
 footer {
