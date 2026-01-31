@@ -1,6 +1,9 @@
 <?php require "includes/header.php";?>
 
 <main>
+
+    <img src="bakery.png" alt="Bakery Image">
+
     <h2>Contact Us</h2>
     
     <form action="process.php" method="post">
