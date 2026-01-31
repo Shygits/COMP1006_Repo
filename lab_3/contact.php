@@ -22,7 +22,7 @@
 
     <p>
         <label for ="messsage">Message</label>
-        <textarea id="message" name="message" rows ="5" required></textarea>
+        <textarea id="message" name="message" minlength= "3" maxlength= "250" required></textarea>
     </p>
 
         <button type="submit">Submit</button>
