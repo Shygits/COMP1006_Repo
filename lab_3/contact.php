@@ -2,8 +2,6 @@
 
 <main>
 
-<img src="assets/bitumi.png" alt="Bitumi" width="300">
-
     <h2>Contact Us</h2>
     
     <form action="process.php" method="post">
