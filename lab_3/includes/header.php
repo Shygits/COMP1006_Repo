@@ -16,6 +16,7 @@
             <img
                src="assets/bitumi.png" alt="Bake It Til You Make It Bakery" 
                 width="300"
+                position= "center"
                 class="logo">
         </h1>
         
