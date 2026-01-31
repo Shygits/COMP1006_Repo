@@ -15,7 +15,7 @@
         <input type="email" id= "email" name="email" required>
 
         <label for="Message">Send Us Your Message</label>
-        <input type="text" id= "message" name="message" required>
+        <input type="text-box" id= "message" name="message" required>
 
         <button type="submit">Submit</button>
 
