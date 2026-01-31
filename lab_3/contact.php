@@ -5,17 +5,25 @@
     <h2>Contact Us</h2>
     
     <form action="process.php" method="post">
+    <p>
         <label for="first_name">First Name</label>
         <input type="text" id= "first_name" name="first_name" required>
+    </p>
 
+    <p>
         <label for="last_name">Last Name</label>
         <input type="text" id= "last_name" name="last_name" required>
-
+    </p>
+    
+    <p>
         <label for="email">Email</label>
         <input type="email" id= "email" name="email" required>
+    </p>
 
-        <label for="Message">Send Us Your Message</label>
-        <input type="text-box" id= "message" name="message" required>
+    <p>
+        <label for ="messsage">Message</label>
+        <textarea id="message" name="message" min rows ="5" required></textarea>
+    </p>
 
         <button type="submit">Submit</button>
 
