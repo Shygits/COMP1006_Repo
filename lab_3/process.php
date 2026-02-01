@@ -53,7 +53,7 @@ exit;
 }
 //Email Variables
 $to ="info@bakery.com";
-$subject = "Contact Form Submission from " . $firstName . " " . $lastName;
+$subject = "Contact Form Submission from " . $firstName . $lastName;
  ?>
 
 <!-- echo the data the user submitted -->
