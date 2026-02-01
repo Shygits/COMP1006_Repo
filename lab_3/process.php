@@ -38,6 +38,7 @@ if ($message === null || $message === '') {
 
 <?php
 
+
 //if there are errors, display to user and exit the script 
 if(!empty($errors)) {
     echo "<ul>";
@@ -45,17 +46,21 @@ foreach ($errors as $error) {
     echo "<li>" . $error . "</li>"; //concatenation
 }
 echo "</ul>";
-
+echo "</main>"; 
+//closes before exiting so doesnt break html structure
 //stop the script from executing  
 exit; 
 }
-?>
-    
-    <!-- echo the data the user submitted -->
+//Email Variables
+$to ="info@bakery.com";
+$subject = "Contact Form Submission from " . $firstName . " " . $lastName;
+ ?>
+
+<!-- echo the data the user submitted -->
     <?php echo "<h2> Thank you for your message " . $firstName . "</h2>"; ?>
-</main>
+
 
 <!--send email using mail function -->
-<?php //mail($to, $email, $message, $firstName. " " . $lastName); ?> 
+<?php mail($to, $subject, $message); ?> 
 
 <?php require "includes/footer.php"; ?>
