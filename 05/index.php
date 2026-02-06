@@ -90,7 +90,7 @@
         </tbody>
       </table>
 
-    </fieldset>
+    </fieldset> -->
 
     <fieldset>
       <legend>Additional Comments</legend>
@@ -110,6 +110,6 @@
 </main>
 </body>
 
-</html>-->
+</html>
 
 <?php require "includes/footer.php" ?>

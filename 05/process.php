@@ -16,7 +16,7 @@ $phone     = trim(filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_SPECIAL_CHAR
 $address   = trim(filter_input(INPUT_POST, 'address', FILTER_SANITIZE_SPECIAL_CHARS));
 $comments  = trim(filter_input(INPUT_POST, 'comments', FILTER_SANITIZE_SPECIAL_CHARS));
 
-/*3 */
+/*3 Clean errors and do not display to user*/
 
 $errors = [];
 
@@ -68,6 +68,28 @@ if (!empty($errors)) {
 }
 
 /*4*/
+//Build a query and store in a variable called SQL using place holders
+$SQL = "insert into orders (first_name, last_name, email, phone, address, comments) values 
+(:first_name, :last_name, :email, :phone, :address, :comments)";
+
+//Prepare the query
+$stmt = $pdo->prepare($SQL);
+
+//map the named placeholder with the value they represent
+$stmt->bindParam(':first_name', $firstName);
+$stmt->bindParam(':last_name', $lastName);
+$stmt->bindParam(':email', $email);
+$stmt->bindParam(':phone', $phone);
+$stmt->bindParam(':address', $address); 
+$stmt->bindParam(':comments', $comments);
+
+//Execute the Query
+$stmt->execute();   
+
+
+//close the connection
+$pdo = null; 
+
 
 
 ?>
