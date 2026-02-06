@@ -4,7 +4,7 @@ $db = "bitumi"; //database name
 $user = "root"; //username
 $password = ""; //password
 
-//points to the database
+//points to the database (data source network)
 $dsn = "mysql:host=$host;dbname=$db";
 
 //try to connect, if connected echo a yay!

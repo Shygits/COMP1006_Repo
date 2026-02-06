@@ -1,13 +1,14 @@
 <?php
 
+//require database connection script
 require "includes/connect.php";  
 
-/*1*/
+/*1     ! means does not or not == checks for quarlity ===checks for type of quality*/
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     die('Invalid request');
 }
 
-/*2*/
+/*2 Sanitize Data*/
 $firstName = trim(filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_SPECIAL_CHARS));
 $lastName  = trim(filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_SPECIAL_CHARS));
 $email     = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
@@ -15,7 +16,7 @@ $phone     = trim(filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_SPECIAL_CHAR
 $address   = trim(filter_input(INPUT_POST, 'address', FILTER_SANITIZE_SPECIAL_CHARS));
 $comments  = trim(filter_input(INPUT_POST, 'comments', FILTER_SANITIZE_SPECIAL_CHARS));
 
-/*3*/
+/*3 */
 
 $errors = [];
 

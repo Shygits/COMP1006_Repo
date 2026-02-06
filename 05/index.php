@@ -20,7 +20,7 @@
         <input type="text" id="email" name="email">
     </fieldset>
 
-    <!-- Order Details -->
+   <!-- Order Details 
     <fieldset>
       <legend>Order Details</legend>
 
@@ -110,6 +110,6 @@
 </main>
 </body>
 
-</html>
+</html>-->
 
 <?php require "includes/footer.php" ?>
