@@ -5,6 +5,7 @@
 
     <!-- Customer Information -->
     <!-- Step One - Add Client Side Validation with HTML Attributes -->
+     
     <fieldset>
       <legend>Customer Information</legend>
         <label for="first_name">First name</label>
