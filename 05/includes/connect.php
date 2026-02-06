@@ -1,6 +1,6 @@
 <?php 
 $host = "localhost"; //hostname
-$db = "fitymi"; //database name
+$db = "bitymi"; //database name
 $user = "root"; //username
 $password = ""; //password
 
