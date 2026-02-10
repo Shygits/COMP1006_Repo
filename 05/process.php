@@ -73,7 +73,7 @@ $SQL = "insert into orders (first_name, last_name, email, phone, address, commen
 (:first_name, :last_name, :email, :phone, :address, :comments)";
 
 //Prepare the query
-$stmt = $conn->prepare($SQL);
+$stmt = $pdo->prepare($SQL);
 
 //map the named placeholder with the value they represent
 $stmt->bindParam(':first_name', $firstName);
@@ -88,7 +88,7 @@ $stmt->execute();
 
 
 //close the connection
-$conn = null; 
+$pdo = null; 
 
 
 
