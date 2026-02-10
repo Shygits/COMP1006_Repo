@@ -88,7 +88,7 @@ $stmt->execute();
 
 
 //close the connection
-$pdo = null; 
+$conn = null; 
 
 
 
