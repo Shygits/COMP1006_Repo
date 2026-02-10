@@ -103,7 +103,7 @@
     </fieldset>
 
     <p>
-<button type="button" class="btn btn-primary">Place Order</button>
+<button type="submit" class="btn btn-primary">Place Order</button>
     </p>
 
   </form>
