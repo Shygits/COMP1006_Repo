@@ -1,12 +1,11 @@
 <?php
 //TODO:
-require "connect.php";
+require "includes/connect.php";
   
 /*1. Write a SELECT query to get all subscribers*/
-$sql = "SELECT * FROM subscribers 
-
 /*2. Add ORDER BY subscribed_at DESC*/
-ORDER BY subscribed_at DESC";
+$sql = "SELECT * FROM subscribers ORDER BY subscribed_at DESC";
+
 
 /*3. Prepare the statement*/
 $stmt = $pdo->prepare($sql);
@@ -42,7 +41,9 @@ $subscribers = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <td><?=  htmlspecialchars($subs['first_name']) ?></td> ?>
         <td><?=  htmlspecialchars($subs['last_name']) ?></td> ?>
         <td><?=  htmlspecialchars($subs['email']) ?></td> ?>
-        <td><?=  htmlspecialchars($subs['subscribed_at']) ?></td> ?>
+        <td>
+          <?=  htmlspecialchars($subs['subscribed_at']) ?>
+        </td>
   </tr>
 <?php endforeach; ?>
       </tbody>
@@ -53,5 +54,3 @@ $subscribers = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <a href="index.php">Back to Subscribe Form</a>
   </p>
 </main>
-
-<?php require "footer.php"; ?>

@@ -1,7 +1,7 @@
 <?php
-//require "includes/header.php";
-//  TODO: connect to the database 
 require "includes/connect.php";
+//  TODO: connect to the database 
+//require "connect.php";
 //   TODO: Grab form data (no validation or sanitization for this lab)
 $firstName = $_POST['first_name'];
 $lastName = $_POST['last_name'];
@@ -19,7 +19,7 @@ $stmt->execute([
     ':first_name' => $firstName,
     ':last_name' => $lastName,
     ':email' => $email
-])
+]);
 
 ?>
 <!DOCTYPE html>
