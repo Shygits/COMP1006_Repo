@@ -1,6 +1,6 @@
 <?php
 //TODO:
-require "includes/connect.php";
+require "connect.php";
   
 /*1. Write a SELECT query to get all subscribers*/
 $sql = "SELECT * FROM subscribers 
@@ -54,4 +54,4 @@ $subscribers = $stmt->fetchAll(PDO::FETCH_ASSOC);
   </p>
 </main>
 
-<?php require "includes/footer.php"; ?>
+<?php require "footer.php"; ?>
