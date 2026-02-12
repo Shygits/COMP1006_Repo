@@ -37,7 +37,7 @@ $subscribers = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- 6.TODO: Loop through $subscribers and output each row -->
 <?php foreach ($subscribers as $subs): ?>
   <tr>
-    <td><?=  htmlspecialchars($subs['id']) ?></td> ?>
+    <td><?=  htmlspecialchars($subs['id']) ?></td>
         <td><?=  htmlspecialchars($subs['first_name']) ?></td> 
         <td><?=  htmlspecialchars($subs['last_name']) ?></td> 
         <td><?=  htmlspecialchars($subs['email']) ?></td>
