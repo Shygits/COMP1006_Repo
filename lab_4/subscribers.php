@@ -35,7 +35,9 @@ $subscribers = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </tr>
       </thead>
       <tbody>
-        <!-- TODO: Loop through $subscribers and output each row -->
+        <!-- 6.TODO: Loop through $subscribers and output each row -->
+<?php foreach ($subscribers as $subs): ?>
+
       </tbody>
     </table>
   <?php endif; ?>
