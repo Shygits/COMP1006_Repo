@@ -8,18 +8,17 @@ $lastname = $POST['last_name'];
 $email = $POST['email'];
 
 /*1. Write an INSERT statement with named placeholders*/
-  
+  $sql = "INSERT INTO subscribers (first_name, last_name, email) VALUES (:first_name, :last_name, :email)";
 
 /*2. Prepare the statement*/
-
 $stmt = $pdo->prepare($sql);
   
 
 /*3. Execute the statement with an array of values*/
 $stmt->execute([
     ':first_name' => $firstname,
-    ':first_name' => $firstname,
-    ':first_name' => $firstname,
+    ':last_name' => $lastname,
+    ':email' => $email
 ])
 
 ?>
@@ -39,7 +38,7 @@ $stmt->execute([
 
         <!-- TODO: Display a confirmation message -->
         <!-- Example: "Thanks, Name! You have been added to our mailing list." -->
-
+            <p> Thank you for subscribing, <?= htmlspecialchars($first_name) ?> Youve've been added to our mailing list! ?>
 
         <p class="mt-3">
             <a href="subscribers.php">View Subscribers</a>
