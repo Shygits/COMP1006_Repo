@@ -3,8 +3,8 @@
 //  TODO: connect to the database 
 require "includes/connect.php";
 //   TODO: Grab form data (no validation or sanitization for this lab)
-$firstname = $_POST['first_name'];
-$lastname = $_POST['last_name'];
+$firstName = $_POST['first_name'];
+$lastName = $_POST['last_name'];
 $email = $_POST['email'];
 
 /*1. Write an INSERT statement with named placeholders*/
@@ -16,8 +16,8 @@ $stmt = $pdo->prepare($sql);
 
 /*3. Execute the statement with an array of values*/
 $stmt->execute([
-    ':first_name' => $firstname,
-    ':last_name' => $lastname,
+    ':first_name' => $firstName,
+    ':last_name' => $lastName,
     ':email' => $email
 ])
 
