@@ -1,5 +1,5 @@
 <?php
-require "includes/header.php";
+//require "includes/header.php";
 //  TODO: connect to the database 
 require "includes/connect.php";
 //   TODO: Grab form data (no validation or sanitization for this lab)
@@ -38,7 +38,9 @@ $stmt->execute([
 
         <!-- TODO: Display a confirmation message -->
         <!-- Example: "Thanks, Name! You have been added to our mailing list." -->
-            <p> Thank you for subscribing, <?= htmlspecialchars($first_name) ?> Youve've been added to our mailing list! ?>
+            <p> 
+                Thank you for subscribing, <?= htmlspecialchars($firstName) ?>   You've been added to our mailing list!
+            </p>
 
         <p class="mt-3">
             <a href="subscribers.php">View Subscribers</a>
