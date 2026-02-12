@@ -4,16 +4,23 @@ require "includes/header.php";
 require "includes/connect.php";
 //   TODO: Grab form data (no validation or sanitization for this lab)
 $firstname = $POST['first_name'];
-$firstname = $POST['first_name'];
-$firstname = $POST['first_name'];
+$lastname = $POST['last_name'];
+$email = $POST['email'];
 
-/*
-  1. Write an INSERT statement with named placeholders
-  2. Prepare the statement
-  3. Execute the statement with an array of values
-  4.
+/*1. Write an INSERT statement with named placeholders*/
+  
 
-*/
+/*2. Prepare the statement*/
+
+$stmt = $pdo->prepare($sql);
+  
+
+/*3. Execute the statement with an array of values*/
+$stmt->execute([
+    ':first_name' => $firstname,
+    ':first_name' => $firstname,
+    ':first_name' => $firstname,
+])
 
 ?>
 <!DOCTYPE html>

@@ -14,7 +14,7 @@ $stmt = $pdo->prepare($sql);
 /*4. Execute the statement*/
 $stmt->execute();
 
-5. Fetch all results into $subscribers
+/*5. Fetch all results into $subscribers*/
 $subscribers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
