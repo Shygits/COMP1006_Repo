@@ -38,9 +38,9 @@ $subscribers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php foreach ($subscribers as $subs): ?>
   <tr>
     <td><?=  htmlspecialchars($subs['id']) ?></td> ?>
-        <td><?=  htmlspecialchars($subs['first_name']) ?></td> ?>
-        <td><?=  htmlspecialchars($subs['last_name']) ?></td> ?>
-        <td><?=  htmlspecialchars($subs['email']) ?></td> ?>
+        <td><?=  htmlspecialchars($subs['first_name']) ?></td> 
+        <td><?=  htmlspecialchars($subs['last_name']) ?></td> 
+        <td><?=  htmlspecialchars($subs['email']) ?></td>
         <td>
           <?=  htmlspecialchars($subs['subscribed_at']) ?>
         </td>
