@@ -10,6 +10,7 @@ $stmt = $pdo->prepare($sql);
 
 //execute 
 $stmt->execute(); 
+
 //retrieve all rows returned by a SQL query at once
 $orders = $stmt->fetchAll(); 
 
