@@ -28,7 +28,7 @@ $orders = $stmt->fetchAll();
         <?php
           // Calculate total items
           $total = 
-          $order['chaos_croissant'] + $order['existential_eclair'] + $order['procrastination_cookie']
+          $order['chaos_croissant'] + $order['existential_eclair'] + $order['procrastination_cookie'] 
         ?>
 
         <li class="mb-3">
